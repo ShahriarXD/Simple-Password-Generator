@@ -19,6 +19,14 @@ if symbols:
 length = int(input("Please Enter The Lenghth of the Password: \n"))
 amount = int(input("Please Enter The Ammount of the Password to be Generated: \n"))
 
+#THIS IS NOT RECOMMENDED
+#To Always get the same password we can use random.seed()
+#the generator creates a random number based on the seed value, so if the seed value is 10, you will always get same as the first random number.
+
+# for_same_pass_everytime = "Shahriar_xD"
+# random.seed(for_same_pass_everytime)
+
+
 for x in range(amount):   # loop runing the amount number of times
     password = "".join(random.sample(temp,length))
     print(password)
